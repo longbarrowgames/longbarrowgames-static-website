@@ -1296,11 +1296,15 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			display: flex;
+  			justify-content: center;
 		}
 
 			#header .logo img {
-			width: 100%;
+			width: 80%;
+			max-width: 80%;
 			display: block;
+			justify-self: center;
 			}
 
 			#header .logo .icon:before {
