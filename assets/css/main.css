@@ -385,6 +385,7 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -899,6 +900,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		padding-top: 5px;
 	}
 
 		ul.icons li {
@@ -910,15 +912,16 @@ input, select, textarea {
 				padding-right: 0;
 			}
 
-			ul.icons li a {
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				display: inline-block;
-				height: 2.25rem;
-				line-height: 2.25rem;
-				text-align: center;
-				width: 2.25rem;
-			}
+		ul.icons li a {
+			border-radius: 100%;
+			box-shadow: inset 0 0 0 1px #ffffff;
+			display: inline-block;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			text-align: center;
+			width: 2.25rem;
+			vertical-align: middle;
+		}
 
 				ul.icons li a:hover {
 					background-color: rgba(255, 255, 255, 0.075);
@@ -927,6 +930,31 @@ input, select, textarea {
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
+
+	ul.icons li a.bsky {
+		border-radius: 100%;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: 2.25rem;
+		width: 2.25rem;
+		vertical-align: middle;
+	}
+
+	ul.icons li a.bsky .bsky-svg {
+		fill: #ffffff;
+		overflow: visible;
+		vertical-align: baseline;
+		width: 24px;
+	}
+
+	@media (max-width: 1680px) {
+		ul.icons li a.bsky .bsky-svg {
+			width: 18px;
+		}
+	}
+
 
 /* Table */
 
@@ -1198,7 +1226,7 @@ input, select, textarea {
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: space-between;
+		justify-content: center;
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
@@ -1296,15 +1324,16 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
-			display: flex;
-  			justify-content: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			#header .logo img {
-			width: 80%;
 			max-width: 80%;
-			display: block;
+			max-height: 80%;
 			justify-self: center;
+			vertical-align: middle;
 			}
 
 			#header .logo .icon:before {
