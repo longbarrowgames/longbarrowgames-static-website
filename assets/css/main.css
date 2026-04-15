@@ -1234,8 +1234,6 @@ input, select, textarea {
 		padding: 4rem 2rem;
 		z-index: 3;
 		min-height: 100vh;
-		max-height: 100vh;
-		height: 100vh;
 		overflow: hidden;
 	}
 
@@ -1702,6 +1700,7 @@ input, select, textarea {
 /* LBG Additions */
 
  img.main_logo {
+	min-height: 10vw;
 	max-height: 20vh;
  }
 
@@ -1720,4 +1719,37 @@ input, select, textarea {
 	width: 1px;
 	height: calc(3.5rem + 1px);
 	background: #ffffff;
+}
+
+ @media screen and (max-width: 736px) {
+.vertical_line > *:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: calc(-2.0rem - 1px);
+	left: calc(50% - 1px);
+	width: 1px;
+	height: calc(2.0rem + 1px);
+	background: #ffffff;
+}
+}
+
+img.bottom_backround_logo {
+    position: fixed;
+    bottom: -40vw;
+    right: -32vw;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.5;
+    transform: translate(25%, 25%);
+}
+
+@media (max-width: 560px) {
+    img.bottom_backround_logo {
+        width: 100vw;
+        bottom: -35vw;
+        right: 25vw;
+    }
 }
