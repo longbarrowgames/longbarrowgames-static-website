@@ -29,6 +29,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	
+
 body {
 	line-height: 1;
 }
@@ -896,11 +898,11 @@ input, select, textarea {
 
 /* Icons */
 
+
 	ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
-		padding-top: 5px;
 	}
 
 		ul.icons li {
@@ -1228,10 +1230,13 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: center;
 		position: relative;
-		min-height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
+		min-height: 100vh;
+		max-height: 100vh;
+		height: 100vh;
+		overflow: hidden;
 	}
 
 		#wrapper:before {
@@ -1290,6 +1295,8 @@ input, select, textarea {
 		text-align: center;
 	}
 
+
+
 		#header > * {
 			-moz-transition: opacity 0.325s ease-in-out;
 			-webkit-transition: opacity 0.325s ease-in-out;
@@ -1298,17 +1305,6 @@ input, select, textarea {
 			position: relative;
 			margin-top: 3.5rem;
 		}
-
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1339,6 +1335,7 @@ input, select, textarea {
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
+			
 
 		#header .content {
 			border-style: solid;
@@ -1697,3 +1694,30 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+ 
+
+
+/* LBG Additions */
+
+ img.main_logo {
+	max-height: 20vh;
+ }
+
+ @media screen and (max-width: 480px) {
+ 	img.main_logo {
+		max-height: 40vw;
+	 }
+ }
+ 
+.vertical_line > *:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: calc(-3.5rem - 1px);
+	left: calc(50% - 1px);
+	width: 1px;
+	height: calc(3.5rem + 1px);
+	background: #ffffff;
+}
