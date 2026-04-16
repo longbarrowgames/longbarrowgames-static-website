@@ -1758,3 +1758,40 @@ img.bottom_backround_logo {
         right: 25vw;
     }
 }
+
+
+/* Continuous vertical scaling */
+#header > * {
+    margin-top: clamp(0.5rem, 3vh, 3.5rem);
+}
+
+#header .content .inner {
+    padding: clamp(0.5rem, 2.5vh, 3rem) 2rem;
+}
+
+#header .content .inner > p {
+    margin-bottom: clamp(0.25rem, 1vh, 1rem);
+}
+
+img.main_logo {
+    min-height: unset;
+    max-height: clamp(3.5rem, 14vh, 22vh);
+}
+
+#wrapper {
+    padding: clamp(0.5rem, 3vh, 4rem) clamp(0.5rem, 2vw, 2rem);
+}
+
+.vertical_line > *:before {
+    top: calc(clamp(0.5rem, 3vh, 3.5rem) * -1 - 1px);
+    height: calc(clamp(0.5rem, 3vh, 3.5rem) + 1px);
+}
+
+/* Allow scrolling when article is open, prevent it otherwise */
+body {
+    overflow: hidden;
+}
+
+body.is-article-visible {
+    overflow-y: auto;
+}
