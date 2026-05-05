@@ -1370,6 +1370,11 @@ input, select, textarea {
 					border-bottom: none;
 				}
 
+				#header .content .inner h3 a {
+					border-bottom: solid 1.6px #ffffff;
+				}
+
+
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
