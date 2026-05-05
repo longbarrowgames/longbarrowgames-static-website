@@ -1190,7 +1190,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1366,12 +1366,17 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
+				#header .content .inner h3 a {
+					border-bottom: none;
+				}
+
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
 			}
+
 
 		#header nav ul {
 			display: -moz-flex;
