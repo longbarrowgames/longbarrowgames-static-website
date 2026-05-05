@@ -1366,7 +1366,7 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-				#header .content .inner h3 a {
+				#header .content .inner * a {
 					border-bottom: none;
 				}
 
